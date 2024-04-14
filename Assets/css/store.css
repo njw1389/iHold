@@ -1,0 +1,107 @@
+/* Common styles for both desktop and mobile */
+.shop {
+    color: var(--colors-font, #000);
+    text-align: center;
+    font-family: Arimo, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.25px;
+}
+
+.line-up {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 70px 80px 70px;
+}
+
+.img-container {
+    padding: 0 5px;
+    border-radius: 20px;
+    border: 4px solid rgba(38, 38, 38, 0.73);
+    padding: 25px 25px 25px 25px;
+}
+
+.item {
+    font-size: 15px;
+}
+
+.line {
+    border-left: 6px solid black;
+    height: 500px;
+}
+
+.buy {
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+
+.disclaimer {
+    font-size: 15px;
+}
+
+.Protos-Container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.Proto-Container img {
+    height: 50vw;
+    width: auto;
+    border-radius: 50px;
+    margin-top: 10px;
+    border: 1px black solid;
+}
+.Proto-Link img:active {
+    transform: scale(0.95);
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 1000px) {
+    .Proto-Container img {
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .line-up {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line {
+        border-left: none;
+        border-top: 6px solid black;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px; /* Remove the top margin */
+        margin-bottom: 0px; /* Add margin at the bottom for spacing */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .buy {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .buy {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .line-up {
+        margin: 0 20px;
+    }
+}

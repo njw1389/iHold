@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IHold - Store</title>
+        <link rel="stylesheet" href="../Assets/css/universal.css">
+        <link rel="stylesheet" href="../Assets/css/nav.css">
+        <link rel="stylesheet" href="../Assets/css/store.css">
+        <link rel="stylesheet" href="../Assets/css/footer.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="hamburger" onclick="toggleNav()" type="button" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                <ul>
+                    <li class="first-item"><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="shop-item"><a href="#" class="active">Shop</a></li>
+                </ul>
+            </nav>
+            <img class="logo" src="../Assets/images/IHoldLogo.png" alt="IHold Logo"></li>
+            <div class="social-media">
+                <a href="#"><img src="../Assets/images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../Assets/images/instagram.png" alt="Instagram"></a>
+            </div>
+        </header>
+
+        <main>
+            <section class="shop">
+                <h1>View Our Line-Up</h1>
+    
+                <section class="line-up">
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="../Assets/images/shopBlack.png" alt="iHold - Black">
+                        </div>
+                        <br>
+                        iHold - Black<br>
+                        $99.99<br><br>
+                        <button class="buy" onclick="highlightDisclaimer()">Buy Now</button>
+                    </div>
+    
+                    <div class="line"></div>
+    
+                    <div class="item">
+                        <div class="img-container">
+                            <img src="../Assets/images/shopWhite.png" alt="iHold - White">
+                        </div>
+                        <br>
+                        iHold - White<br>
+                        $99.99<br><br>
+                        <button class="buy" onclick="highlightDisclaimer()">Buy Now</button>
+                    </div>
+                </section>
+    
+                <h3 class="disclaimer">* Disclaimer: This is a college-level project based on an imaginary product, none of the items for sale here are real.</h3>
+                
+                <section class="prototype">
+                    <h2>iHold Prototype</h2>
+                    <div>Click on either prototype to learn how to use our product before buying it!</div>
+                    
+                    <div class="Protos-Container">
+                        <div class="Proto-Container">
+                            <a class="Proto-Link" href="https://www.figma.com/file/I8cNiyv4cI93XLrtBj7OCc/iHold-iPhone-Log-In?type=design&node-id=1-99&mode=design&t=xhTjJXgR4GxWhfM1-0"><img src="../Assets/images/iPhoneProto.png" alt="iPhone Prototype"></a>
+                        </div>
+
+                        <div class="Proto-Container">
+                            <a class="Proto-Link" href="https://www.figma.com/file/SSLUOqjm2mNxo3hTm0Lair/iHold-Device-Flow?type=design&node-id=109-19&mode=design&t=wqLZws77Z2bJ7SWv-0"><img src="../Assets/images/iHoldProto.png" alt="iHold Prototype"></a>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="wrapper">
+                    <div class="footer-section">
+                        <div>
+                            <img src="../Assets/images/IHoldLogo.png" alt="Logo" class="footer-logo">
+                        </div>
+                        <div class="mobile-social-media-container">
+                            <a href="#"><img src="../Assets/images/facebook.png" class="social-icon" id="first2" alt="Facebook"></a>
+                            <a href="#"><img src="../Assets/images/instagram.png" class="social-icon" id="last2" alt="Instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footer-section foot1">
+                        <h3>Site Links</h3>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section foot2">
+                    <h3>Site Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Creators</h3>
+                    <ul>
+                        <li>Helen Lopez-Santos</li>
+                        <li>Daniel McKee</li>
+                        <li>Nolan Wira</li>
+                        <li>Luke Picciano</li>
+                        <li>Oskar Furlan</li>
+                        <li>Ivan Li</li>
+                    </ul>
+                </div>
+                <div class="footer-section wrapped">
+                    <h3>Connect With Us</h3>
+                    <div class="social-media-container">
+                        <a href="#"><img src="../Assets/images/facebook.png" class="social-icon" id="first" alt="Facebook"></a>
+                        <a href="#"><img src="../Assets/images/instagram.png" class="social-icon" id="last" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to Top Button -->
+        <button onclick="scrollToTop()" id="backToTopButton" title="Go to top">Top</button>
+
+        <script src="../Assets/scripts/scripts.js"></script>
+    </body>
+</html>

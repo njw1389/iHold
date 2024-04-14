@@ -1,0 +1,294 @@
+.Kickstarter {
+    border-radius: 20px;
+    width: 100%;
+    overflow: hidden; /* Ensures the video corners are clipped */
+    margin-bottom: 70px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Storyboard-Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.Storyboard-Left img, .Storyboard-Right img {
+    width: 100%;
+}
+
+
+.Storyboard-Left, .Storyboard-Right {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.Storyboard-Middle {
+    margin: 28px 0 28px 0;
+    border-bottom: 2px #000 solid;
+    width: 400px;
+}
+
+.questions-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 80px 30px;
+}
+
+.questions-container > div {
+    padding: 0 5px;
+    border-radius: 20px;
+    border: 4px solid rgba(38, 38, 38, 0.73);
+    padding: 25px 25px 25px 25px;;
+
+    color: var(--colors-font, #000);
+    text-align: center;
+    font-family: Arimo, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.25px;
+}
+
+.Prototype-Container img {
+    max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.about-section {
+    max-width: 100%;
+    padding: 20px 68px 0 68px;
+}
+
+.about-section h1 {
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0px;
+    padding-bottom: 40px;
+    padding-right: 0px;
+    margin-bottom: 60px;
+    margin-right: 0px;
+    width: 250px;
+    border-bottom: 2px solid #000;
+}
+
+.about-section h2 {
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: 1.2px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    width: 375px;
+    border-bottom: 2px solid #000;
+}
+
+.about-section h3 {
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.about-section p {
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.audience-member {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 180px;
+}
+.audience-member:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+} .audience-member:active {
+    transform: scale(0.95);
+}
+
+.green-arrow, .name {
+    flex-shrink: 0;
+}
+
+.name {
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 1.8px;
+    padding-bottom: 0px;
+    width: 15%;
+    border-bottom: 2px solid #000;
+    width: 150px;
+}
+
+.green-arrow img {
+    width: 24px;
+    height: 24px;
+}
+
+#image-karen, #image-glenn, #image-aaliyah {
+    display: none;
+    opacity: 0;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audience-image-fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.audience-image-fade-out {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.Audience-Container {
+    border-radius: 20px;
+    border: 4px solid rgba(38, 38, 38, 0.73);
+    padding-top: 17px;  
+    padding-right: 26px;  
+    padding-bottom: 47px;
+    padding-left: 26px;    
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+.Flow, .SignIn {
+    border-radius: 60px;
+    overflow: hidden; 
+}
+
+.Design-UI-Video-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Design-UI-Video-Element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.SignIn {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 83%;
+}
+
+.Design-UI-Video-Container .Design-UI-Video-Element:first-child {
+    margin-left: 50px
+}
+
+.Flow {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 92.3%;
+}
+
+.RedesignIMG img {
+    width: 100%;
+    border-radius: 20px;
+} .RedesignIMG {
+    border-radius: 20px;
+    margin-bottom: 70px;
+}
+
+.buy-button {
+    border-radius: 40px;
+    background: var(--colors-hover, #68D868);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 265px;
+    height: 70px;
+    color: var(--colors-font, #000);
+    font-family: Arimo, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 4.2px;
+    margin-top: 69px;
+    margin-bottom: 150px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buy-button:active {
+    transform: scale(0.95); 
+}
+
+@media screen and (max-width: 999px) {
+    .questions-container {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .questions-container > div {
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+        padding: 15px 15px 15px 15px;
+    }
+
+    .Design-UI-Video-Container {
+        flex-direction: column;
+    }
+
+    .buy-button {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .Flow, .SignIn {
+        width: 50%;
+        margin: auto;
+    }
+    .Design-UI-Video-Element {
+        justify-content: center;
+    }
+
+    .Design-UI-Video-Container .Design-UI-Video-Element:first-child {
+        margin-left: 0px
+    }
+    
+    #image-karen, #image-glenn, #image-aaliyah {
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width: 500px) {
+    .about-section {
+        padding: 20px 30px 0px 30px;
+    }
+}
